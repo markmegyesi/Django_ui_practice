@@ -1,0 +1,1 @@
+# Django_ui_practice
