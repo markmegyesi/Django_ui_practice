@@ -12,7 +12,8 @@ posts = [
      'content': 'second content',
      'date_posted': '2022.szeptember.12'},
      {'author': 'Megyesi Márk',
-     'title': 'third content',
+     'title': 'Blog post 3',
+     'content': 'third content',
      'date_posted': '2022.szeptember.11'},
 ]
 
@@ -24,3 +25,6 @@ def home(request):
 
 def about(request):
     return render(request, 'blog/about.html')
+
+def contact(request):
+    return render(request, 'blog/contact.html')
