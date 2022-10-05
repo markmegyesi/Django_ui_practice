@@ -18,12 +18,20 @@
     <main role="main" class="container">
         <div class="row">
             <div class="col-md-8">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+
                 {% include 'base/navbar.html' %}
                 {% block content %}
                 {% endblock content%}
             </div>
             <div class="col-md-4">
-                <p>ez egy teszt</p> 
+                <p><!--ez egy teszt--></p> 
             </div>
         </div>
     </main>
