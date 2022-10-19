@@ -10,7 +10,7 @@ class PostsModel(models.Model):
     author =  models.ForeignKey(User, on_delete=models.CASCADE)
 
     class Meta:
-        db_table = 'posts'
+        db_table = 'posts' 
 
     def __str__(self) -> str:
         return f'{self.title} - {self.author}'
